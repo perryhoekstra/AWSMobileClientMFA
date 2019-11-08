@@ -1,7 +1,51 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LKg-bU-DTW">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="q3v-hx-w0f">
+            <objects>
+                <viewController storyboardIdentifier="Login" id="LKg-bU-DTW" customClass="LoginViewController" customModule="AWSMobileClientMFA" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2IV-WZ-nRp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Chc-42-WKu">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="egs-Ks-jAx">
+                                        <rect key="frame" x="186" y="398.5" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="egs-Ks-jAx" firstAttribute="centerX" secondItem="Chc-42-WKu" secondAttribute="centerX" id="QD1-Ir-weC"/>
+                                    <constraint firstItem="egs-Ks-jAx" firstAttribute="centerY" secondItem="Chc-42-WKu" secondAttribute="centerY" id="sNb-sD-pE6"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WLx-dk-bNf" firstAttribute="bottom" secondItem="Chc-42-WKu" secondAttribute="bottom" id="ER2-gM-lTS"/>
+                            <constraint firstItem="Chc-42-WKu" firstAttribute="leading" secondItem="WLx-dk-bNf" secondAttribute="leading" id="Lox-EJ-rJj"/>
+                            <constraint firstItem="Chc-42-WKu" firstAttribute="top" secondItem="WLx-dk-bNf" secondAttribute="top" id="d6C-IS-pwt"/>
+                            <constraint firstItem="WLx-dk-bNf" firstAttribute="trailing" secondItem="Chc-42-WKu" secondAttribute="trailing" id="iZB-Zh-deC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WLx-dk-bNf"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Fm4-qS-QAk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rQs-NU-Q88" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="23" y="72"/>
+        </scene>
+    </scenes>
 </document>

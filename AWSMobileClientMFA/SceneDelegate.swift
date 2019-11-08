@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AWSMobileClient
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -14,9 +15,46 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+        
+        AWSMobileClient.sharedInstance().initialize { (userState, error) in
+            if let error = error {
+                print("error: \(error.localizedDescription)")
+                
+                return
+            }
+              
+            guard let userState = userState else {
+                return
+            }
+              
+            print("The user is \(userState.rawValue).")
+              
+            // Check user availability
+            switch userState {
+                case .signedIn:
+                    let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+                  
+                    let mainViewController = storyboard.instantiateViewController(withIdentifier: "Main") as! MainViewController
+                  
+                    self.window!.rootViewController = mainViewController
+
+                    self.window!.makeKeyAndVisible()
+
+                    break
+                  
+            default:
+                  let storyboard = UIStoryboard.init(name: "Login", bundle: nil)
+                  
+                  let loginViewController = storyboard.instantiateViewController(withIdentifier: "Login") as! LoginViewController
+              
+                  self.window!.rootViewController = loginViewController
+
+                  self.window!.makeKeyAndVisible()
+                  
+                  break
+            }
+        }
+        
         guard let _ = (scene as? UIWindowScene) else { return }
     }
 

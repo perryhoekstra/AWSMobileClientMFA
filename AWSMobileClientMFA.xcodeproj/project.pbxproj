@@ -3,27 +3,37 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E1926F9A1C3F7D161344B0D /* Pods_AWSMobileClientMFA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6483C6FEDB1C4BD5CEAE0EE /* Pods_AWSMobileClientMFA.framework */; };
 		D81EC6B223759A52009455F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81EC6B123759A52009455F4 /* AppDelegate.swift */; };
 		D81EC6B423759A52009455F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81EC6B323759A52009455F4 /* SceneDelegate.swift */; };
-		D81EC6B623759A52009455F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81EC6B523759A52009455F4 /* ViewController.swift */; };
+		D81EC6B623759A52009455F4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81EC6B523759A52009455F4 /* MainViewController.swift */; };
 		D81EC6B923759A52009455F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D81EC6B723759A52009455F4 /* Main.storyboard */; };
 		D81EC6BB23759A54009455F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D81EC6BA23759A54009455F4 /* Assets.xcassets */; };
 		D81EC6BE23759A54009455F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D81EC6BC23759A54009455F4 /* LaunchScreen.storyboard */; };
+		D8D922B52375A2B000965045 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = D8D922B42375A2B000965045 /* awsconfiguration.json */; };
+		D8D922B92375B75E00965045 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8D922B82375B75E00965045 /* Login.storyboard */; };
+		D8D922BB2375B7B000965045 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D922BA2375B7B000965045 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		25AA931D9D64B8F0FD1215CF /* Pods-AWSMobileClientMFA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AWSMobileClientMFA.release.xcconfig"; path = "Target Support Files/Pods-AWSMobileClientMFA/Pods-AWSMobileClientMFA.release.xcconfig"; sourceTree = "<group>"; };
 		D81EC6AE23759A52009455F4 /* AWSMobileClientMFA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AWSMobileClientMFA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D81EC6B123759A52009455F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D81EC6B323759A52009455F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D81EC6B523759A52009455F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D81EC6B523759A52009455F4 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		D81EC6B823759A52009455F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D81EC6BA23759A54009455F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D81EC6BD23759A54009455F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D81EC6BF23759A54009455F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D89BEC5118CB85C8961803DF /* Pods-AWSMobileClientMFA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AWSMobileClientMFA.debug.xcconfig"; path = "Target Support Files/Pods-AWSMobileClientMFA/Pods-AWSMobileClientMFA.debug.xcconfig"; sourceTree = "<group>"; };
+		D8D922B42375A2B000965045 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		D8D922B82375B75E00965045 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		D8D922BA2375B7B000965045 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E6483C6FEDB1C4BD5CEAE0EE /* Pods_AWSMobileClientMFA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AWSMobileClientMFA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E1926F9A1C3F7D161344B0D /* Pods_AWSMobileClientMFA.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E6AFD32CD82057B20712F3E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D89BEC5118CB85C8961803DF /* Pods-AWSMobileClientMFA.debug.xcconfig */,
+				25AA931D9D64B8F0FD1215CF /* Pods-AWSMobileClientMFA.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C5DCB8CF3FD6291383B861FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E6483C6FEDB1C4BD5CEAE0EE /* Pods_AWSMobileClientMFA.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D81EC6A523759A51009455F4 = {
 			isa = PBXGroup;
 			children = (
 				D81EC6B023759A52009455F4 /* AWSMobileClientMFA */,
 				D81EC6AF23759A52009455F4 /* Products */,
+				6E6AFD32CD82057B20712F3E /* Pods */,
+				C5DCB8CF3FD6291383B861FA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,13 +86,16 @@
 		D81EC6B023759A52009455F4 /* AWSMobileClientMFA */ = {
 			isa = PBXGroup;
 			children = (
+				D8D922B42375A2B000965045 /* awsconfiguration.json */,
 				D81EC6B123759A52009455F4 /* AppDelegate.swift */,
 				D81EC6B323759A52009455F4 /* SceneDelegate.swift */,
-				D81EC6B523759A52009455F4 /* ViewController.swift */,
+				D81EC6B523759A52009455F4 /* MainViewController.swift */,
 				D81EC6B723759A52009455F4 /* Main.storyboard */,
 				D81EC6BA23759A54009455F4 /* Assets.xcassets */,
 				D81EC6BC23759A54009455F4 /* LaunchScreen.storyboard */,
 				D81EC6BF23759A54009455F4 /* Info.plist */,
+				D8D922B82375B75E00965045 /* Login.storyboard */,
+				D8D922BA2375B7B000965045 /* LoginViewController.swift */,
 			);
 			path = AWSMobileClientMFA;
 			sourceTree = "<group>";
@@ -74,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D81EC6C223759A54009455F4 /* Build configuration list for PBXNativeTarget "AWSMobileClientMFA" */;
 			buildPhases = (
+				0AF28DEBD084F104C2A50487 /* [CP] Check Pods Manifest.lock */,
 				D81EC6AA23759A51009455F4 /* Sources */,
 				D81EC6AB23759A51009455F4 /* Frameworks */,
 				D81EC6AC23759A51009455F4 /* Resources */,
+				D3C5673BE483E87732F0020A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,20 +160,65 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8D922B52375A2B000965045 /* awsconfiguration.json in Resources */,
 				D81EC6BE23759A54009455F4 /* LaunchScreen.storyboard in Resources */,
 				D81EC6BB23759A54009455F4 /* Assets.xcassets in Resources */,
+				D8D922B92375B75E00965045 /* Login.storyboard in Resources */,
 				D81EC6B923759A52009455F4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0AF28DEBD084F104C2A50487 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AWSMobileClientMFA-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3C5673BE483E87732F0020A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AWSMobileClientMFA/Pods-AWSMobileClientMFA-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AWSMobileClientMFA/Pods-AWSMobileClientMFA-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AWSMobileClientMFA/Pods-AWSMobileClientMFA-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D81EC6AA23759A51009455F4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D81EC6B623759A52009455F4 /* ViewController.swift in Sources */,
+				D8D922BB2375B7B000965045 /* LoginViewController.swift in Sources */,
+				D81EC6B623759A52009455F4 /* MainViewController.swift in Sources */,
 				D81EC6B223759A52009455F4 /* AppDelegate.swift in Sources */,
 				D81EC6B423759A52009455F4 /* SceneDelegate.swift in Sources */,
 			);
@@ -282,6 +362,7 @@
 		};
 		D81EC6C323759A54009455F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D89BEC5118CB85C8961803DF /* Pods-AWSMobileClientMFA.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -294,12 +375,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.norsemensolutions.AWSMobileClientMFA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		D81EC6C423759A54009455F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25AA931D9D64B8F0FD1215CF /* Pods-AWSMobileClientMFA.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -312,7 +394,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.norsemensolutions.AWSMobileClientMFA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
