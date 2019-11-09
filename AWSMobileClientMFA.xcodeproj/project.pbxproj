@@ -14,6 +14,8 @@
 		D81EC6B923759A52009455F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D81EC6B723759A52009455F4 /* Main.storyboard */; };
 		D81EC6BB23759A54009455F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D81EC6BA23759A54009455F4 /* Assets.xcassets */; };
 		D81EC6BE23759A54009455F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D81EC6BC23759A54009455F4 /* LaunchScreen.storyboard */; };
+		D87C0472237622E90000CBE7 /* MFAModal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D87C0470237622E90000CBE7 /* MFAModal.storyboard */; };
+		D87C0473237622E90000CBE7 /* MFAModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87C0471237622E90000CBE7 /* MFAModalViewController.swift */; };
 		D8D922B52375A2B000965045 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = D8D922B42375A2B000965045 /* awsconfiguration.json */; };
 		D8D922B92375B75E00965045 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8D922B82375B75E00965045 /* Login.storyboard */; };
 		D8D922BB2375B7B000965045 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D922BA2375B7B000965045 /* LoginViewController.swift */; };
@@ -29,6 +31,8 @@
 		D81EC6BA23759A54009455F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D81EC6BD23759A54009455F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D81EC6BF23759A54009455F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D87C0470237622E90000CBE7 /* MFAModal.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MFAModal.storyboard; sourceTree = "<group>"; };
+		D87C0471237622E90000CBE7 /* MFAModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFAModalViewController.swift; sourceTree = "<group>"; };
 		D89BEC5118CB85C8961803DF /* Pods-AWSMobileClientMFA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AWSMobileClientMFA.debug.xcconfig"; path = "Target Support Files/Pods-AWSMobileClientMFA/Pods-AWSMobileClientMFA.debug.xcconfig"; sourceTree = "<group>"; };
 		D8D922B42375A2B000965045 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
 		D8D922B82375B75E00965045 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
@@ -96,6 +100,8 @@
 				D81EC6BF23759A54009455F4 /* Info.plist */,
 				D8D922B82375B75E00965045 /* Login.storyboard */,
 				D8D922BA2375B7B000965045 /* LoginViewController.swift */,
+				D87C0470237622E90000CBE7 /* MFAModal.storyboard */,
+				D87C0471237622E90000CBE7 /* MFAModalViewController.swift */,
 			);
 			path = AWSMobileClientMFA;
 			sourceTree = "<group>";
@@ -161,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8D922B52375A2B000965045 /* awsconfiguration.json in Resources */,
+				D87C0472237622E90000CBE7 /* MFAModal.storyboard in Resources */,
 				D81EC6BE23759A54009455F4 /* LaunchScreen.storyboard in Resources */,
 				D81EC6BB23759A54009455F4 /* Assets.xcassets in Resources */,
 				D8D922B92375B75E00965045 /* Login.storyboard in Resources */,
@@ -218,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8D922BB2375B7B000965045 /* LoginViewController.swift in Sources */,
+				D87C0473237622E90000CBE7 /* MFAModalViewController.swift in Sources */,
 				D81EC6B623759A52009455F4 /* MainViewController.swift in Sources */,
 				D81EC6B223759A52009455F4 /* AppDelegate.swift in Sources */,
 				D81EC6B423759A52009455F4 /* SceneDelegate.swift in Sources */,

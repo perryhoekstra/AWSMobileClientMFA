@@ -8,4 +8,5 @@ target 'AWSMobileClientMFA' do
   # Pods for AWSMobileClientMFA
   pod 'AWSCore', '~> 2.9.0'
   pod 'AWSMobileClient', '~> 2.9.0'
+  pod 'JGProgressHUD'
 end

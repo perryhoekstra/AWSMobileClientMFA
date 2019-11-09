@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Modal View Controller-->
+        <scene sceneID="bbH-2d-quD">
+            <objects>
+                <viewController storyboardIdentifier="MFAModal" id="h8t-MT-DFa" customClass="MFAModalViewController" customModule="Tempore_Prod" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fvA-kd-u38">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2qw-Nn-GGG">
+                                <rect key="frame" x="42" y="298" width="330" height="300"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mOz-ud-TKR">
+                                        <rect key="frame" x="85" y="60" width="160" height="42"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="160" id="Yio-7y-MXw"/>
+                                            <constraint firstAttribute="height" constant="42" id="cDS-zi-uQg"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
+                                        <color key="textColor" name="Travellabs_Text_Black"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter MFA code provided" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdv-CZ-pBr" userLabel="Instructions Label">
+                                        <rect key="frame" x="85" y="132" width="160" height="42"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="42" id="Qmu-V0-o1b"/>
+                                            <constraint firstAttribute="width" constant="160" id="ZbD-3D-Tgd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
+                                        <color key="textColor" name="Travellabs_Text_Black"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="MFA Code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="637-eR-iTl">
+                                        <rect key="frame" x="85" y="204" width="160" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="160" id="RDy-Tk-7uC"/>
+                                            <constraint firstAttribute="height" constant="44" id="ac2-yA-J8y"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                        <connections>
+                                            <action selector="mfaTextFieldChanged:" destination="h8t-MT-DFa" eventType="editingChanged" id="y7c-8Z-zQj"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="637-eR-iTl" firstAttribute="centerX" secondItem="2qw-Nn-GGG" secondAttribute="centerX" id="AxY-FN-COZ"/>
+                                    <constraint firstItem="gdv-CZ-pBr" firstAttribute="top" secondItem="mOz-ud-TKR" secondAttribute="bottom" constant="30" id="ENS-dF-2u3"/>
+                                    <constraint firstAttribute="height" constant="300" id="gJy-Cz-nGs"/>
+                                    <constraint firstItem="mOz-ud-TKR" firstAttribute="top" secondItem="2qw-Nn-GGG" secondAttribute="top" constant="60" id="hEM-Im-dsJ"/>
+                                    <constraint firstItem="mOz-ud-TKR" firstAttribute="centerX" secondItem="2qw-Nn-GGG" secondAttribute="centerX" id="s3T-PL-dyL"/>
+                                    <constraint firstItem="637-eR-iTl" firstAttribute="top" secondItem="gdv-CZ-pBr" secondAttribute="bottom" constant="30" id="vGj-Ph-Yap"/>
+                                    <constraint firstItem="gdv-CZ-pBr" firstAttribute="leading" secondItem="mOz-ud-TKR" secondAttribute="leading" id="wOc-Vp-eEs"/>
+                                    <constraint firstAttribute="width" constant="330" id="zlC-Eg-bgs"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2qw-Nn-GGG" firstAttribute="centerX" secondItem="fvA-kd-u38" secondAttribute="centerX" id="ANE-lr-c7t"/>
+                            <constraint firstItem="2qw-Nn-GGG" firstAttribute="centerY" secondItem="fvA-kd-u38" secondAttribute="centerY" id="szx-8a-bcg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jQq-Wz-AR1"/>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundView" destination="fvA-kd-u38" id="q1l-Mq-jvA"/>
+                        <outlet property="boxView" destination="2qw-Nn-GGG" id="xKH-Qc-SQF"/>
+                        <outlet property="messageLabel" destination="mOz-ud-TKR" id="GnY-IL-aGL"/>
+                        <outlet property="mfaTextField" destination="637-eR-iTl" id="xWD-PN-4D2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mb0-Hm-bfb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="Travellabs_Text_Black">
+            <color red="0.125" green="0.125" blue="0.125" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
